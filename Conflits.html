@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Résolution des conflits</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Verdana">  -->
+	<link rel="stylesheet" href="./CSS/cssverdana.css?family=Verdana">
+	
+<!--		<link rel="stylesheet" href="./CSS/font-awesome.min.css">  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link rel="stylesheet" href="./CSS/bootstrap.min.css">
+	<link href="./CSS/gwdimage_style.css" rel="stylesheet" data-version="17" data-exports-type="gwd-image">
+	<script src="./CSS/jquery.min.js"></script>
+	<script src="./CSS/popper.min.js"></script>
+	<script src="./CSS/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./CSS/w3.css">
+	
+	<script src="./CSS/bootstrap.bundle.min.js"></script> 
+		
+	
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('./Images/accord2c.jpg');
+  min-height: 100%;
+}
+</style>
+  
+  <style type="text/css">
+
+	#pHeader {
+		color: rgb(0, 0, 0);
+		font-family:  BODONI mt;
+		font-size: 32px;		
+	}
+
+	#pli {
+		color: rgb(0, 0, 0);
+		font-family: Helvitica;
+		font-size: 15px;
+		padding-top: 2px;
+	}
+	
+
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-light-grey w3-theme-d2 w3-wide w3-padding w3-card   ">
+ 
+  <a class="w3-bar-item w3-button  w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+
+  
+	<a href="./index.html" class="w3-bar-item  w3-hide-small w3-hide-medium w3-light-grey"><img src="./Images/logo4.jpg" alt="Tiers Impartial Logo" style="width:375px; height:48px;"></a> 
+	
+ 	<a href="./index.html" class="w3-bar-item  w3-hide-large w3-light-grey"><img src="./Images/logo4d.jpg" alt="Tiers Impartial Logo" style="width:256px; height:48px; "></a>   
+	
+	<a href="./Contact.html" class="w3-bar-item w3-button w3-hide-small  w3-hide-medium w3-right"><p id="pli">Nous joindre</p></a>  
+	<a href="./Publications.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"><p id="pli">Publications</p></a> 
+	<div class="  w3-dropdown-hover w3-hide-small w3-hide-medium w3-right">
+		<button class="w3-button w3-wide"  ><p id="pli">Services</p></button>     
+			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+			  <a href="./Conflits.html" class="w3-bar-item w3-button"><p id="pli">Résolution des conflits</p></a> 
+			  <a href="./Analyse.html" class="w3-bar-item w3-button"><p id="pli">Analyse du climat de travail</p></a> 
+			  <a href="./Enquete.html" class="w3-bar-item w3-button"><p id="pli">Enquête administrative</p></a> 
+			  <a href="./Soutien.html" class="w3-bar-item w3-button"><p id="pli">Soutiens, conseils et formation</p></a> 
+			</div>
+	</div>  
+	<a href="./Apropos.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-right"><p id="pli">À propos</p></a> 
+ </div>
+
+	<!-- ------------------------------------------------------------- ---->
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-light-grey w3-theme-d2 w3-padding w3-card w3-hide w3-hide-large ">
+  
+	<a href="./Apropos.html" class="w3-bar-item w3-button">À propos</a> 
+	<a href="./Publications.html" class="w3-bar-item w3-button">Publications</a>	
+	<a href="./Contact.html" class="w3-bar-item w3-button">Nous joindre</a> 
+    <div class="w3-dropdown-hover w3-right">
+		<button class="w3-button" >Services</button>     
+			<div class="w3-dropdown-content w3-card-4 w3-bar-block">
+			  <a href="./Conflits.html" class="w3-bar-item w3-button">Résolution des conflits</a>
+			  <a href="./Analyse.html" class="w3-bar-item w3-button">Analyse du climat de travail</a>			  
+			  <a href="./Enquete.html" class="w3-bar-item w3-button">Enquête administrative</a>
+			  <a href="./Soutien.html" class="w3-bar-item w3-button">Soutiens, conseils et formation</a>
+			</div>
+	</div>
+	<a href="#" class="w3-bar-item w3-button"></a> 		
+  </div>
+</div>
+	<!-- ------------------------------------------------------------- ---->
+	
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%; margin:auto; top: 80px;" >
+  <div class="bgimg"></div>
+</nav>
+
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" id="myRight"  style="margin-left:40%;top: 90px;">
+
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo" style="font-family:  BODONI mt;">Résolution des conflits</h1>
+	<br>
+ 
+    <img src="./Images/accord2.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="./Images/accord2.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+  <!-- About Section -->
+
+
+  <div class="w3-content w3-left-align w3-text-black" id="about">
+    <h2 style="color: rgb(49, 132, 155);">MÉDIATION RELATIONNELLE EN MILIEU DE TRAVAIL</h2>
+    <hr class="w3-opacity">
+    <p>Au travail, les désaccords et les conflits peuvent porter sur les objectifs et les priorités, le degré de qualité attendu, l’attribution des tâches, le fonctionnement du groupe en général et sur bien d’autres sujets encore. Il peut arriver qu’une dimension relationnelle s’installe et envenime la situation.
+	<br><br>C’est le cas lorsque, notamment, la méfiance et l’agressivité prennent place. Ces situations difficiles peuvent être désamorcées et réglées avec l’intervention d’une personne médiatrice.
+	<br><br>
+	Nous sommes habiletés à intervenir dans les cas de conflits entre salariés, entre gestionnaires ou entre salariés et gestionnaires.
+	<br><br>
+	Nous offrons le service de médiation même en présence d’allégations de harcèlement psychologique.
+    </p>         
+<br><br>
+</div>
+
+  <div class="w3-content w3-left-align w3-text-black w3-padding-32" id="about">
+    <h2 style="color: rgb(49, 132, 155);">MÉDIATION EN MATIÈRE CIVILE</h2>
+    <hr class="w3-opacity">
+    <p>Des tensions palpables, des désaccords importants ou un même un conflit a éclaté au sein de votre équipe sportive, de votre voisinage ou de votre famille (outre qu’une séparation ou un divorce) ? <br><br>
+	Une personne agissant à titre de médiatrice peut aider les parties à trouver un accord qui répond à leurs besoins et intérêts communs et légitimes. En effet, le médiateur ou la médiatrice agit de façon neutre et impartiale tout au long du processus tout en créant des conditions permettant de faciliter la communication entre les parties.<br><br>
+	La médiation est un processus volontaire basé sur la coopération qui comporte plusieurs avantages, notamment : <br><br>
+	         <ul style="font-size: 15px;  text-align: left; padding-left: 50px;">
+          <li>Frais plus abordables qu’un procès;<br><br></li>
+          <li>Processus souple, rapide et confidentiel;<br><br></li>
+          <li>Solutions sur mesure et mutuellement satisfaisantes;<br><br></li>
+          <li>Permets de préserver ou de rétablir les relations.<br><br></li>
+        </ul>
+	
+    </p>         
+<br>
+
+	
+	
+  <center>
+    <h3 style="color: rgb(49, 132, 155); font-family: Helvitica; ">
+      <a class="nav-link" href="./Contact.html">
+        <u>Contactez-nous à propos de ce service</u>
+      </a>
+    </h3>
+	<br><br>
+  </center>
+
+</div>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center" style="margin:-12px">
+    <div>
+    Le Tiers Impartial Inc.<br><br>
+  </div>
+
+    <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+<script>
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
