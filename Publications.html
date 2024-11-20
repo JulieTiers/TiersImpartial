@@ -36,6 +36,61 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
   
   <style type="text/css">
 
+ 
+#cont1 {
+  position: relative;
+  width: 400px;
+  right: 15px;
+}
+
+#cont2 {
+  position: relative;
+  width: 100%;
+  right: 0px;
+  
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+#cont1:hover .overlay {
+  left: 15px;
+  bottom: 0;
+  height: 70%;
+  width: 100%;
+  margin: auto;
+}
+
+#cont2:hover .overlay {
+  bottom: 0;
+  height: 85%;
+  width: 65%;
+  margin: auto;
+}
+
+
+.text {
+  white-space: wrap; 
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 	#pHeader {
 		color: rgb(0, 0, 0);
 		font-family:  BODONI mt;
@@ -99,7 +154,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 	<!-- ------------------------------------------------------------- ---->
 	
 <!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%; height: 700px; margin:auto; top: 80px;" >
+<nav class="w3-sidebar w3-hide-medium w3-hide-small " style="width:40%; height: 650px; margin:auto; top: 80px;" >
   <div class="bgimg"></div>
 </nav>
 
@@ -112,7 +167,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo" style="font-family:  BODONI mt;">Publications</h1>
+    <h1 class="w3-jumbo w3-hide-small"  style="font-family:  BODONI mt;">Publications</h1>
+    <h1 class="w3 w3-hide-large w3-hide-medium"  style="font-family:  BODONI mt;">Publications</h1>
 	<br>
  <!--   <p id="pHeader">Enquête</p> -->
     <img src="./Images/publicationbiblio.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
@@ -121,22 +177,57 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Verdana", sans-serif}
 
   <!-- About Section -->
 	
-  <div class="w3-content w3-left-align w3-text-black" id="about">
-    <center>
-	<h2 style="color: rgb(49, 132, 155);">EN CONSTRUCTION</h2>
-    <hr class="w3-opacity">
-	</center>	
-  </div>	
-	<br><br>	<br><br>	<br><br>  <br><br>	<br><br>
+	
+<div class="container w3-hide-small " id="cont1"   style="top: -50px">  
+  <!--  <div class="w3-card-4" style="width:400px">
+    <img class="card-img-top" src="./Images/champagne1.jpeg"    style="width:400px; height:200px;"   >-->	
 
+  <div class="w3-card-4  " style="width:108%; margin:auto;">
+
+    <img class="card-img-top" src="./Images/champagne1.jpeg"    style="width:100%"   >
+    <div class="card-body">
+      <h4 class="card-title" style="color: rgb(49, 132, 155)">Ces partys trop arrosés</h4>
+      <p class="card-text" style="font-size: 12px;" >Me Julie Cyr<br><br>
+		Collaboratrices:<br>Me Cristina Mageau, Me Eirini Michali.
+	  </p>
+
+	  <div class="overlay">
+		<div class="text">Rappelons que depuis le 27 septembre dernier, toute politique doit désormais faire mention de recommandations concernant les conduites à adopter lors de la <i>participation aux activités sociales liées au travail</i>. <br><br></div>
+		<a href="./Lecture1.html"class="btn btn-primary" style="font-size: 12px;" >Lire l'article</a>
+	  </div>
+    </div>
+  </div>
+</div>  
+
+<div class="container w3-hide-large w3-hide-medium "  id="cont2">  
+  <!--  <div class="w3-card-4" style="width:400px">
+    <img class="card-img-top" src="./Images/champagne1.jpeg"    style="width:400px; height:200px;"   >-->	
+
+  <div class="w3-card-4  " style="width:70%; margin:auto;">
+
+    <img class="card-img-top" src="./Images/champagne1.jpeg"    style="width:100%"   >
+    <div class="card-body">
+      <h4 class="card-title" style="color: rgb(49, 132, 155)">Ces partys trop arrosés</h4>
+      <p class="card-text" style="font-size: 12px;" >Me Julie Cyr<br><br>
+		Collaboratrices:<br>Me Cristina Mageau, Me Eirini Michali.
+	  </p>
+
+	  <div class="overlay">
+		<div class="text">Rappelons que depuis le 27 septembre dernier, toute politique doit désormais faire mention de recommandations concernant les conduites à adopter lors de la <i>participation aux activités sociales liées au travail</i>. <br><br></div>
+		<a href="./Lecture1.html"class="btn btn-primary" style="font-size: 12px;" >Lire l'article</a>
+	  </div>
+    </div>
+  </div>
+</div> 
+
+  <br><br><br>	
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-16 w3-light-grey w3-center" style="margin:-12px">
+  <footer class="w3-container w3-padding-16 w3-light-grey w3-center" style="margin:-12px; font-size: 12px" >
     <div>
-    Le Tiers Impartial Inc.<br><br>
+	<br>
+    Tous droits réservés © 2024 <br>Le Tiers Impartial Inc.<br><br>
   </div>
-
-    <p class="w3-small">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <!-- End footer -->
   </footer>
   
